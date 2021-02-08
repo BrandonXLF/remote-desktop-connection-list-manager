@@ -70,8 +70,7 @@ Section "${APP_NAME}" S1
 SectionEnd
 
 Section "Add To Start Menu" S2
-	CreateDirectory "$SMPROGRAMS\${APP_NAME}"
-	CreateShortcut "$SMPROGRAMS\${APP_NAME}\${APP_NAME}.lnk" "$INSTDIR\${APP_NAME}.exe"
+	CreateShortcut "$SMPROGRAMS\${APP_NAME}.lnk" "$INSTDIR\${APP_NAME}.exe"
 SectionEnd
 
 Section "Create Desktop Shortcut" S3
