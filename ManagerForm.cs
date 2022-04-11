@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using Microsoft.Win32;
 
-namespace Remote_Desktop_Connection_List_Manager
+namespace RDCLM
 {
     public partial class ManagerForm : Form
     {

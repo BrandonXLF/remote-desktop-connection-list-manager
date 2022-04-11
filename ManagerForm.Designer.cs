@@ -1,4 +1,4 @@
-﻿namespace Remote_Desktop_Connection_List_Manager
+﻿namespace RDCLM
 {
     partial class ManagerForm
     {

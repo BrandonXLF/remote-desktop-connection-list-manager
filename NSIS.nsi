@@ -6,7 +6,7 @@
 
 Name "${APP_NAME}"
 BrandingText " "
-OutFile "Release/${SHORT_NAME} Installer.exe"
+OutFile "bin\Publish\${SHORT_NAME} Installer.exe"
 Unicode True
 
 !define PRODUCT "${APP_NAME}"
@@ -59,13 +59,14 @@ FunctionEnd
 Section "${APP_NAME}" S1
 	SectionIn RO
 	SetOutPath $INSTDIR
-	File "Release\${APP_NAME}.exe"
-	WriteUninstaller "$INSTDIR\uninstall.exe"
+	File "bin\Publish\${APP_NAME}.exe"
+	WriteUninstaller "$INSTDIR\${SHORT_NAME} Uninstaller.exe"
 	WriteRegStr SHCTX "${REG_KEY}" "DisplayName" "${APP_NAME}"
 	WriteRegStr SHCTX "${REG_KEY}" "InstallLocation" "$INSTDIR"
+	WriteRegStr SHCTX "${REG_KEY}" "Publisher" "Brandon Fowler"
 	WriteRegDWORD SHCTX "${REG_KEY}" "NoModify" "1"
 	WriteRegDWORD SHCTX "${REG_KEY}" "NoRepair" "1"
-	WriteRegStr SHCTX "${REG_KEY}" "UninstallString" "$INSTDIR\uninstall.exe"
+	WriteRegStr SHCTX "${REG_KEY}" "UninstallString" "$INSTDIR\${SHORT_NAME} Uninstaller.exe"
 	WriteRegStr SHCTX "${REG_KEY}" "DisplayIcon" "$INSTDIR\${APP_NAME}.exe"
 SectionEnd
 
@@ -78,10 +79,10 @@ Section "Create Desktop Shortcut" S3
 SectionEnd
 
 Section "Uninstall"
-	Delete "$INSTDIR\uninstall.exe"
-	Delete "$INSTDIR\${APP_NAME}.exe"
-	Delete "$SMPROGRAMS\${APP_NAME}\${APP_NAME}.lnk"
+	Delete "$SMPROGRAMS\${APP_NAME}.lnk"
 	Delete "$DESKTOP\${APP_NAME}.lnk"
+	Delete "$INSTDIR\${APP_NAME}.exe"
+	Delete "$INSTDIR\${SHORT_NAME} Uninstaller.exe"
 	RMDir $INSTDIR
 	DeleteRegKey SHCTX "${REG_KEY}"
 SectionEnd

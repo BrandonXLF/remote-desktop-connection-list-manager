@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Remote_Desktop_Connection_List_Manager {
-    static class Program
-    {
+namespace RDCLM {
+    static class Program {
         [STAThread]
         static void Main() {
             Application.EnableVisualStyles();
