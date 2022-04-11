@@ -5,14 +5,11 @@
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net6.0-windows</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<ApplicationIcon>favicon.ico</ApplicationIcon>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-	  <Deterministic>True</Deterministic>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-	  <Deterministic>True</Deterministic>
+		<Version>1.0.1</Version>
+		<Authors>Brandon Fowler</Authors>
+		<Copyright>Copyright © 2020 Brandon Fowler</Copyright>
+		<Deterministic>True</Deterministic>
 	</PropertyGroup>
 	<ItemGroup>
 		<Content Include="favicon.ico" />
