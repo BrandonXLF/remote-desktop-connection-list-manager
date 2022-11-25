@@ -6,7 +6,7 @@
 		<TargetFramework>net6.0-windows</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ApplicationIcon>favicon.ico</ApplicationIcon>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Authors>Brandon Fowler</Authors>
 		<Copyright>Copyright © 2020 Brandon Fowler</Copyright>
 		<Deterministic>True</Deterministic>

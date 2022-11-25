@@ -43,18 +43,20 @@
             // 
             this.addInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addInput.Location = new System.Drawing.Point(12, 236);
+            this.addInput.Location = new System.Drawing.Point(14, 272);
+            this.addInput.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.addInput.Name = "addInput";
-            this.addInput.Size = new System.Drawing.Size(262, 20);
+            this.addInput.Size = new System.Drawing.Size(305, 23);
             this.addInput.TabIndex = 0;
             this.addInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AddInputKeyPress);
             // 
             // add
             // 
             this.add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.add.Location = new System.Drawing.Point(280, 234);
+            this.add.Location = new System.Drawing.Point(327, 270);
+            this.add.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(23, 23);
+            this.add.Size = new System.Drawing.Size(27, 27);
             this.add.TabIndex = 1;
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = true;
@@ -66,18 +68,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.computers.FormattingEnabled = true;
-            this.computers.Location = new System.Drawing.Point(12, 66);
+            this.computers.ItemHeight = 15;
+            this.computers.Location = new System.Drawing.Point(14, 76);
+            this.computers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.computers.Name = "computers";
             this.computers.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.computers.Size = new System.Drawing.Size(381, 160);
+            this.computers.Size = new System.Drawing.Size(444, 184);
             this.computers.TabIndex = 4;
             // 
             // remove
             // 
             this.remove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.remove.Location = new System.Drawing.Point(309, 234);
+            this.remove.Location = new System.Drawing.Point(360, 270);
+            this.remove.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.remove.Name = "remove";
-            this.remove.Size = new System.Drawing.Size(25, 23);
+            this.remove.Size = new System.Drawing.Size(29, 27);
             this.remove.TabIndex = 5;
             this.remove.Text = "-";
             this.remove.UseVisualStyleBackColor = true;
@@ -86,9 +91,10 @@
             // up
             // 
             this.up.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.up.Location = new System.Drawing.Point(340, 234);
+            this.up.Location = new System.Drawing.Point(397, 270);
+            this.up.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.up.Name = "up";
-            this.up.Size = new System.Drawing.Size(23, 23);
+            this.up.Size = new System.Drawing.Size(27, 27);
             this.up.TabIndex = 6;
             this.up.Text = "⯅";
             this.up.UseVisualStyleBackColor = true;
@@ -97,9 +103,10 @@
             // down
             // 
             this.down.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.down.Location = new System.Drawing.Point(369, 233);
+            this.down.Location = new System.Drawing.Point(430, 269);
+            this.down.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.down.Name = "down";
-            this.down.Size = new System.Drawing.Size(24, 23);
+            this.down.Size = new System.Drawing.Size(28, 27);
             this.down.TabIndex = 7;
             this.down.Tag = "";
             this.down.Text = "⯆";
@@ -111,9 +118,10 @@
             this.titleText2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.titleText2.AutoSize = true;
             this.titleText2.BackColor = System.Drawing.Color.Transparent;
-            this.titleText2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25743F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleText2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25743F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.titleText2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.titleText2.Location = new System.Drawing.Point(137, 38);
+            this.titleText2.Location = new System.Drawing.Point(170, 44);
+            this.titleText2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleText2.Name = "titleText2";
             this.titleText2.Size = new System.Drawing.Size(137, 25);
             this.titleText2.TabIndex = 10;
@@ -124,9 +132,10 @@
             this.titleText1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.titleText1.AutoSize = true;
             this.titleText1.BackColor = System.Drawing.Color.Transparent;
-            this.titleText1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25743F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleText1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25743F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.titleText1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.titleText1.Location = new System.Drawing.Point(73, 13);
+            this.titleText1.Location = new System.Drawing.Point(100, 15);
+            this.titleText1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleText1.Name = "titleText1";
             this.titleText1.Size = new System.Drawing.Size(261, 25);
             this.titleText1.TabIndex = 9;
@@ -135,9 +144,9 @@
             // 
             // ManagerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 266);
+            this.ClientSize = new System.Drawing.Size(472, 307);
             this.Controls.Add(this.titleText2);
             this.Controls.Add(this.titleText1);
             this.Controls.Add(this.down);
@@ -147,7 +156,8 @@
             this.Controls.Add(this.add);
             this.Controls.Add(this.addInput);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(300, 180);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MinimumSize = new System.Drawing.Size(347, 202);
             this.Name = "ManagerForm";
             this.Text = "Remote Desktop Connection List Manager";
             this.Load += new System.EventHandler(this.ManagerFormLoad);
